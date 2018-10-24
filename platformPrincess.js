@@ -19,13 +19,13 @@ class Platform extends Support {
     }
 }
 
-let finishPlatform = new Platform(game.displayWidth - 60* 2, 500, "Tile (1).png");
+let finishPlatform = new Platform(game.displayWidth - 80* 2, 500, "Tile (1).png");
 finishPlatform.name = "The finish platform";
-let finishMidsection = new Platform(game.displayWidth - 60 * 2, 522, "Tile (4).png");
+let finishMidsection = new Platform(game.displayWidth - 43 * 2, 500, "Tile (2).png");
 finishPlatform.name = "The finish platform";
 let startPlatform = new Platform(0, 480, "Tile (3).png");
 let startBones = new Platform(10, 490, "Bone (1).png");
-let finishPlatformskeleton = new Platform(game.displayWidth - 54 * 2, 480, "Bone (3).png");
+let finishPlatformskeleton = new Platform(game.displayWidth - 60 * 2, 490, "Bone (3).png");
 finishPlatform.name = "The finish platform";
 let midPlatform1 = new Platform(510, 150, "Tile (16).png");
 let midPlatform2 = new Platform(270, 150, "Tile (14).png");
@@ -83,7 +83,7 @@ class LastSlider extends Platform {
 }
 
 new FirstSlider(startPlatform.x + 48 * 3, startPlatform.y + 66, 0);
-new LastSlider(finishPlatform.x - 35 * 5, finishPlatform.y + 48 , 180);
+
 
 class Princess extends Sprite {
     constructor() {
@@ -184,7 +184,7 @@ class Door extends Sprite {
     constructor() {
         super();
         this.setImage("TombStone (2).png");
-        this.x = game.displayWidth - 80;
+        this.x = game.displayWidth - 120;
         this.y = finishPlatform.y - 2 * 38;
         this.accelerateOnBounce = false;
     }
